@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header class="container">
         <a href="">
@@ -21,6 +25,47 @@
                 <li><a href="">Контакти</a></li>
             </ul>
         </nav>
+        <div class="burger-menu">
+            <div class="burger-menu_button">
+                <div class="burger-menu_lines"></div>
+            </div>
+            <div class="burger-menu_nav">
+                <div class="close-menu">
+                    <img src="icons/cross.svg" alt="cross">
+                </div>
+                <a href="#section-1" class="burger-menu_link">Про курс</a>
+                <a href="#section-2" class="burger-menu_link">Про автора</a>
+                <a href="#section-3" class="burger-menu_link">Сертифікати</a>
+                <a href="#section-4" class="burger-menu_link">Відгуки</a>
+                <a href="#section-5" class="burger-menu_link">FAQ</a>
+                <a href="#section-5" class="burger-menu_link">Контакти</a>
+            </div>
+            <div class="burger-menu_overlay"></div>
+        </div>
     </header>
+    <section class="hero">
+        <img class="popcorn-img-360" src="images/hero-popcorn-360.jpg" alt="popcorn">
+        <img class="person-img-360" src="images/hero-person-360.png" alt="popcorn">
+        <img class="popcorn-img-768" src="images/hero-popcorn-768.jpg" alt="popcorn">
+        <img class="person-img-768" src="images/hero-person-768.jpg" alt="popcorn">
+        <img class="popcorn-img-1280" src="images/hero-popcorn-1280.jpg" alt="popcorn">
+        <img class="person-img-1280" src="images/hero-person-1280.jpg" alt="popcorn">
+        <img class="popcorn-img-1920" src="images/hero-popcorn-1920.jpg" alt="popcorn">
+        <img class="person-img-1920" src="images/hero-person-1920.jpg" alt="popcorn">
+        <div class="container">
+            <p class="top-text">Авторський курс вивчення англійської мови</p>
+            <h1><span class="red">English</span> <span class="black">with</span> <span class="yellow">popcorn</span>
+            </h1>
+            <p class="bottom-text">Треба вивчити англійську, але ти втомлений і хочеш дивитись телик? Занурюйся у світ
+                американських телешоу та почни говорити англійською ВЖЕ ЗАРАЗ</p>
+            <button class="gradient-button">Придбати курс<br>зі знижкою -75%</button>
+            <div class="price">
+                <p class="new">389<span>грн</span></p>
+                <p class="old">1556<span>грн</span></p>
+            </div>
+            <button class="start">старт 15 листопада</button>
+        </div>
+    </section>
 </body>
+
 </html>
