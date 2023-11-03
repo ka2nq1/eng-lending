@@ -32,23 +32,28 @@ body {
 
 .container {
     padding: 0 10px;
+    width: 360px;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
     .container {
         padding: 0 20px;
+        width: 768px;
     }
 }
 
 @media (min-width: 1280px) {
     .container {
         padding: 0 50px;
+        width: 1280px;
     }
 }
 
 @media (min-width: 1920px) {
     .container {
         padding: 0 100px;
+        width: 1920px;
     }
 }
 
@@ -1156,71 +1161,25 @@ header li:hover {
 }
 
 .author .certificates {
-    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 340px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
-.author .certificates ul {
+.author .certificates .certificates-img {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     overflow: hidden;
-    justify-content: center;
-    max-height: 120px;
-    padding: 0 10px 20px 10px;
+    height: 128px;
     width: calc(100% + 20px);
-    transition: max-height 0.5s;
-}
-
-.author .certificates li {
-    background-size: cover;
+    /* right: -5px; */
+    transition: height 0.5s;
+    background-image: url(images/certificats-360.jpg);
+    background-size: 366px;
     background-repeat: no-repeat;
-    width: 160px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-}
-
-.author .certificates li:nth-child(1) {
-    background-image: url(images/sert-1-360.jpg);
-    aspect-ratio: 168/113;
-}
-
-.author .certificates li:nth-child(2) {
-    background-image: url(images/sert-2-360.jpg);
-    aspect-ratio: 168/113;
-}
-
-.author .certificates li:nth-child(3) {
-    background-image: url(images/sert-3-360.jpg);
-    aspect-ratio: 168/113;
-}
-
-.author .certificates li:nth-child(4) {
-    background-image: url(images/sert-4-360.jpg);
-    aspect-ratio: 168/113;
-}
-
-.author .certificates li:nth-child(5) {
-    background-image: url(images/sert-5-360.jpg);
-    aspect-ratio: 167/208;
-}
-
-.author .certificates li:nth-child(6) {
-    background-image: url(images/sert-6-360.jpg);
-    aspect-ratio: 167/208;
-}
-
-.author .certificates li:nth-child(7) {
-    background-image: url(images/sert-7-360.jpg);
-    aspect-ratio: 167/240;
-}
-
-.author .certificates li:nth-child(8) {
-    background-image: url(images/sert-8-360.jpg);
-    aspect-ratio: 167/240;
 }
 
 .author .certificates button {
@@ -1255,10 +1214,40 @@ header li:hover {
     display: none;
 }
 
-.author .open ul {
-    max-height: 715px;
+.author .open .certificates-img {
+    height: 750px;
 }
 
+.author .price .img {
+    background-image: url(images/price-360.jpg);
+    width: 340px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.author .price button {
+    margin-bottom: 15px;
+}
+
+.author .price p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.author .price a {
+    display: inline;
+    opacity: 0.8;
+    color: #EF1515;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
 
 @media (min-width: 768px) {
     .author {
@@ -1278,6 +1267,46 @@ header li:hover {
         background-size: contain;
         aspect-ratio: 580/548;
         margin-top: 23px;
+    }
+
+    .author .certificates {
+        max-width: 728px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    .author .certificates .certificates-img {
+        height: 178px;
+        background-image: url(images/certificats-768.jpg);
+        background-size: 748px;
+    }
+
+    .author .open .certificates-img {
+        height: 830px;
+    }
+
+    .author .price .img {
+        background-image: url(images/price-768.jpg);
+        width: 100%;
+        height: 344px;
+        margin-bottom: 20px;
+    }
+    
+    .author .price button {
+        margin-bottom: 20px;
+        margin-right: 182px;
+        margin-top: -110px;
+    }
+    
+    .author .price p {
+        font-size: 18px;
+        width: 420px;
+        text-align: left;
+        margin-left: 127px;
+    }
+    
+    .author .price a {
+        font-size: 18px;
     }
 }
 
@@ -1309,6 +1338,40 @@ header li:hover {
         justify-content: center;
         gap: 100px;
     }
+
+    .author .certificates {
+        max-width: 1180px;
+        width: 100%;
+        margin-top: 130px;
+        margin-bottom: 130px;
+    }
+
+    .author .certificates .certificates-img {
+        height: 288px;
+        background-image: url(images/certificats-1280.jpg);
+        background-size: 1200px;
+    }
+
+    .author .open .certificates-img {
+        height: 1150px;
+    }
+
+    .author .price .img {
+        background-image: url(images/price-1280.jpg);
+        height: 339px;
+        margin-bottom: 20px;
+    }
+    
+    .author .price button {
+        margin-bottom: 30px;
+        margin-right: 562px;
+        margin-top: -65px;
+    }
+    
+    .author .price p {
+        width: 640px;
+        margin-left: 195px;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -1323,5 +1386,40 @@ header li:hover {
         background-repeat: no-repeat;
         height: 601px;
         min-width: 760px;
+    }
+
+    .author .certificates {
+        max-width: 1720px;
+        width: 100%;
+        margin-top: 170px;
+        margin-bottom: 150px;
+    }
+
+    .author .certificates .certificates-img {
+        height: 309px;
+        background-image: url(images/certificats-1920.jpg);
+        background-size: 1740px;
+    }
+
+    .author .open .certificates-img {
+        height: 750px;
+    }
+
+    .author .price .img {
+        background-image: url(images/price-1920.jpg);
+        height: 450px;
+        width: 1327px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    .author .price button {
+        margin-right: 777px;
+        margin-top: -176px;
+    }
+    
+    .author .price p {
+        width: 516px;
+        margin-left: 525px;
     }
 }
