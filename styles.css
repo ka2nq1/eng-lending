@@ -701,9 +701,8 @@ header li:hover {
     background-image: url(images/liberty-360.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    aspect-ratio: 343/692;
-    width: calc(100% + 18px);
-    margin-left: -4px;
+    aspect-ratio: 340/714;
+    width: 100%;
 }
 
 .about .liberty-wrap a {
@@ -894,7 +893,7 @@ header li:hover {
         margin: 0 auto;
         justify-content: center;
     }
-    
+
     .about .about-list li {
         width: 270px;
         height: 182px;
@@ -903,7 +902,7 @@ header li:hover {
         justify-content: center;
         padding: 0 23px;
     }
-    
+
     .about .about-list li:nth-child(3) {
         width: 100%;
         padding: 0 52px;
@@ -918,13 +917,13 @@ header li:hover {
     .about .top-wrap {
         gap: 20px;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin-bottom: 0px;
     }
 
     .about .content-wrap {
-        max-width: 560px;
+        max-width: 461px;
     }
 
     .about .content-text-1 {
@@ -940,6 +939,7 @@ header li:hover {
     .about .img-1 {
         min-width: 680px;
         aspect-ratio: 680/495;
+        margin-bottom: -100px;
     }
 
     .about .liberty-wrap {
@@ -1006,7 +1006,7 @@ header li:hover {
         gap: 20px;
         max-width: 1140px;
     }
-    
+
     .about .about-list li {
         width: 270px;
         height: 182px;
@@ -1015,7 +1015,7 @@ header li:hover {
         justify-content: center;
         padding: 0 20px;
     }
-    
+
     .about .about-list li:nth-child(3) {
         width: 560px;
         padding: 0 52px;
@@ -1030,6 +1030,7 @@ header li:hover {
 
     .about .top-wrap {
         margin-bottom: 30px;
+        gap: 165px;
     }
 
     .about .section-title {
@@ -1044,6 +1045,7 @@ header li:hover {
         background-image: url(images/about-1-1920.jpg);
         min-width: 995px;
         aspect-ratio: 995/646;
+        margin-bottom: 0;
     }
 
     .about .liberty-wrap {
@@ -1095,5 +1097,231 @@ header li:hover {
     .about .about-list {
         gap: 20px;
         max-width: 100%;
+    }
+}
+
+/* ================== AUTHOR ======================== */
+
+.author {
+    margin-bottom: 60px;
+}
+
+.author .section-title {
+    margin-bottom: 30px;
+}
+
+.author .hello {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.author .content-wrap ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.author .content-wrap li {
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    padding-left: 20px;
+}
+
+.author .content-wrap li:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(#EF1515, #F4B410);
+    left: 0;
+    top: 5px;
+}
+
+.author .section-title:before {
+    width: 145px;
+}
+
+.author .img-wrap {
+    background-image: url(images/author-360.jpg);
+    background-size: contain;
+    aspect-ratio: 340/337;
+    margin-top: 30px;
+}
+
+.author .certificates {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author .certificates ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    justify-content: center;
+    max-height: 120px;
+    padding: 0 10px 20px 10px;
+    width: calc(100% + 20px);
+    transition: max-height 0.5s;
+}
+
+.author .certificates li {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 160px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.author .certificates li:nth-child(1) {
+    background-image: url(images/sert-1-360.jpg);
+    aspect-ratio: 168/113;
+}
+
+.author .certificates li:nth-child(2) {
+    background-image: url(images/sert-2-360.jpg);
+    aspect-ratio: 168/113;
+}
+
+.author .certificates li:nth-child(3) {
+    background-image: url(images/sert-3-360.jpg);
+    aspect-ratio: 168/113;
+}
+
+.author .certificates li:nth-child(4) {
+    background-image: url(images/sert-4-360.jpg);
+    aspect-ratio: 168/113;
+}
+
+.author .certificates li:nth-child(5) {
+    background-image: url(images/sert-5-360.jpg);
+    aspect-ratio: 167/208;
+}
+
+.author .certificates li:nth-child(6) {
+    background-image: url(images/sert-6-360.jpg);
+    aspect-ratio: 167/208;
+}
+
+.author .certificates li:nth-child(7) {
+    background-image: url(images/sert-7-360.jpg);
+    aspect-ratio: 167/240;
+}
+
+.author .certificates li:nth-child(8) {
+    background-image: url(images/sert-8-360.jpg);
+    aspect-ratio: 167/240;
+}
+
+.author .certificates button {
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    width: 340px;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 2px solid #000411;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 0;
+}
+
+.author .certificates .hide {
+    display: none;
+}
+
+.author .certificates .hide img {
+    transform: rotate(180deg);
+}
+
+.author .open .hide {
+    display: flex;
+}
+
+.author .open .show-more {
+    display: none;
+}
+
+.author .open ul {
+    max-height: 715px;
+}
+
+
+@media (min-width: 768px) {
+    .author {
+        margin-bottom: 70px;
+    }
+
+    .author .hello {
+        font-size: 20px;
+    }
+
+    .author li {
+        font-size: 18px;
+    }
+
+    .author .img-wrap {
+        background-image: url(images/author-768.jpg);
+        background-size: contain;
+        aspect-ratio: 580/548;
+        margin-top: 23px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .author {
+        margin-bottom: 100px;
+    }
+
+    .author .hello {
+        font-size: 24px;
+    }
+
+    .author .img-wrap {
+        background-image: url(images/author-768.jpg);
+        background-size: contain;
+        aspect-ratio: 580/548;
+        background-repeat: no-repeat;
+        height: 548px;
+        min-width: 580px;
+    }
+
+    .content-wrap {
+        max-width: 480px;
+    }
+
+    .author .top-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .author {
+        margin-bottom: 130px;
+    }
+
+    .author .img-wrap {
+        background-image: url(images/author-1920.jpg);
+        background-size: contain;
+        aspect-ratio: 760/601;
+        background-repeat: no-repeat;
+        height: 601px;
+        min-width: 760px;
     }
 }
