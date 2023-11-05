@@ -1338,6 +1338,7 @@ header li:hover {
     .author .price .img {
         background-image: url(images/price-768.jpg);
         width: 100%;
+        background-size: contain;
         height: 344px;
         margin-bottom: 20px;
     }
@@ -1409,6 +1410,7 @@ header li:hover {
     .author .price .img {
         background-image: url(images/price-1280.jpg);
         height: 339px;
+        background-size: cover;
         margin-bottom: 20px;
     }
 
