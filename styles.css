@@ -1189,6 +1189,7 @@ header li:hover {
     width: 340px;
     justify-content: center;
     cursor: pointer;
+    color: #000411;
     border-bottom: 2px solid #000411;
     font-size: 20px;
     font-weight: 500;
@@ -1833,6 +1834,7 @@ footer .bot-wrap p {
     font-weight: 400;
     line-height: 120%;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 footer .bot-wrap p a {
