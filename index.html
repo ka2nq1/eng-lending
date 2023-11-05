@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="index.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <header class="container">
-        <a href="">
+    <header id="header" class="container">
+        <a href="/">
             <img src="icons/logo.svg" alt="logo" class="logo">
         </a>
         <nav>
             <ul>
-                <li><a href="">Про курс</a></li>
-                <li><a href="">Про автора</a></li>
-                <li><a href="">Сертифікати</a></li>
-                <li><a href="">Відгуки</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Контакти</a></li>
+                <li><a href="#about">Про курс</a></li>
+                <li><a href="#author">Про автора</a></li>
+                <li><a href="#certificates">Сертифікати</a></li>
+                <li><a href="#slider">Відгуки</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#contacts">Контакти</a></li>
             </ul>
         </nav>
         <div class="burger-menu">
@@ -66,7 +71,7 @@
             <button class="start">старт 15 листопада</button>
         </div>
     </section>
-    <section class="about container">
+    <section id="about" class="about container">
         <div class="top-wrap">
             <div class="content-wrap">
                 <h3 class="section-title">Про курс</h3>
@@ -84,7 +89,7 @@
             <div class="img-1"></div>
         </div>
         <div class="liberty-wrap">
-            <a href=""></a>
+            <a href="https://www.instagram.com/coach_olya_yavorska/"></a>
         </div>
         <div class="for-whom-wrap">
             <h3 class="section-title">курс ідеально підійде якщо:</h3>
@@ -139,7 +144,7 @@
             </li>
             <li>
                 <h3>Перша</h3>
-                <p>в україні Екслюзивна методика вивчення англійської 
+                <p>в україні Екслюзивна методика вивчення англійської
                     за допомогою ток-шоу</p>
             </li>
             <li>
@@ -152,22 +157,28 @@
             </li>
         </ul>
     </section>
-    <section class="author container">
+    <section id="author" class="author container">
         <div class="top-wrap">
             <div class="content-wrap">
                 <h3 class="section-title">Автор курсу</h3>
                 <p class="hello">Привіт! Мене звати Ольга Яворська</p>
                 <ul>
-                    <li>Я - Нейромовний коуч, акредитований Міжнародною федерацією коучів (США) та Сетифікований викладач бізнес англійської (IH London)</li>
-                    <li>Готую студентів до успішної здачі міжнародних екзаменів IELTS, FCE, CAE, CPE. Маю підтверждений рівень С2 від Cambridge Assessment English (UK).</li>
-                    <li>Сама пройшла шлях від А1 до С2. Не могла заговорити поки не знайла ПРАВИЛЬНИЙ підхід, яким власне хочу поділитись з ВАМИ!</li>
-                    <li>Моя мета - зробити процес вивчення англійської захоплюючим та практичним. З цим курсом, ви зможете поринути у світ англійської мови, розширити свій словниковий запас і навчитися говорити та розуміти англійську так, як це роблять носії мови.</li>
-                    <li>Буду рада поділитися з вами моїм досвідом і знаннями, щоб допомогти вам досягти ваших цілей у вивченні англійської мови</li>
+                    <li>Я - Нейромовний коуч, акредитований Міжнародною федерацією коучів (США) та Сетифікований
+                        викладач бізнес англійської (IH London)</li>
+                    <li>Готую студентів до успішної здачі міжнародних екзаменів IELTS, FCE, CAE, CPE. Маю підтверждений
+                        рівень С2 від Cambridge Assessment English (UK).</li>
+                    <li>Сама пройшла шлях від А1 до С2. Не могла заговорити поки не знайла ПРАВИЛЬНИЙ підхід, яким
+                        власне хочу поділитись з ВАМИ!</li>
+                    <li>Моя мета - зробити процес вивчення англійської захоплюючим та практичним. З цим курсом, ви
+                        зможете поринути у світ англійської мови, розширити свій словниковий запас і навчитися говорити
+                        та розуміти англійську так, як це роблять носії мови.</li>
+                    <li>Буду рада поділитися з вами моїм досвідом і знаннями, щоб допомогти вам досягти ваших цілей у
+                        вивченні англійської мови</li>
                 </ul>
             </div>
             <div class="img-wrap"></div>
         </div>
-        <div class="certificates">
+        <div id="certificates" class="certificates">
             <div class="certificates-img"></div>
             <button class="show-more">Показати ще<img src="icons/ph_arrow-up.svg" alt="arrow"></button>
             <button class="hide">Згорнути<img src="icons/ph_arrow-up.svg" alt="arrow"></button>
@@ -175,9 +186,128 @@
         <div class="price">
             <div class="img"></div>
             <button class="gradient-button">Придбати курс<br>зі знижкою -75%</button>
-            <p>Ви нічим не ризикуєте. Гарантую <a href="">повернення коштів</a> у повному обсязі за курс з будь-яких причин протягом 14 днів від дня початку навчання</p>
+            <p>Ви нічим не ризикуєте. Гарантую <a href="/return.html">повернення коштів</a> у повному обсязі за курс з будь-яких
+                причин протягом 14 днів від дня початку навчання</p>
         </div>
     </section>
+    <section id="slider" class="slider container">
+        <h3 class="section-title">Відгуки моїх студентів</h3>
+        <div class="slick-slider">
+            <div>
+                <img src="images/slider-1.jpg" alt="slider-img">
+            </div>
+            <div>
+                <img src="images/slider-2.jpg" alt="slider-img">
+            </div>
+            <div>
+                <img src="images/slider-3.jpg" alt="slider-img">
+            </div>
+            <div>
+                <img src="images/slider-4.jpg" alt="slider-img">
+            </div>
+            <div>
+                <img src="images/slider-5.jpg" alt="slider-img">
+            </div>
+            <div>
+                <img src="images/slider-6.jpg" alt="slider-img">
+            </div>
+        </div>
+    </section>
+    <section id="FAQ" class="FAQ container">
+        <h3 class="section-title">FAQ</h3>
+        <ul>
+            <li class="questionsItem">
+                <div class="item-wrap">
+                    <p class="mainText">Де і як відбувається навчання?</p>
+                    <div class="icon"></div>
+                </div>
+                <p class="secondText">Після оплати ви отримаєте доступ до закритого телеграм-каналу. Там ви отримаєте посилання на всі лекції курсу. Тривалість кожної лекції 20-40 хв. Усі відеолекції в записі. Ви можете переглядати їх у зручний для себе час.</p>
+            </li>
+            <li class="questionsItem">
+                <div class="item-wrap">
+                    <p class="mainText">Який рівень англійської потрібно мати, щоб було і цікаво займатись і не надто складно?</p>
+                    <div class="icon"></div>
+                </div>
+                <p class="secondText">Рекомендую цей курс, якщо у Вас В1 і вище</p>
+            </li>
+            <li class="questionsItem">
+                <div class="item-wrap">
+                    <p class="mainText">Які можливості для зворотного зв'язку та підтримки надаються студентам?</p>
+                    <div class="icon"></div>
+                </div>
+                <p class="secondText">Я ціную питання та зворотний зв'язок студентів. Так як, післи оплати за курс Ви отримаете доступ до закритого телеграм каналу де я завжди рада допомогти та готова підтримати вас у вашому навчанні.</p>
+            </li>
+            <li class="questionsItem">
+                <div class="item-wrap">
+                    <p class="mainText">Чи правда те, що Ви повертаєте кошти?</p>
+                    <div class="icon"></div>
+                </div>
+                <p class="secondText">Так, це правда. Я поверну Вам кошти у повному обсязі за марафон з будь-яких причин протягом 14 днів від дня початку навчання. Детальніше з політикою поверення коштів можна ознайомитись тут <a href="/return.html">Повернення коштів</a></p>
+            </li>
+            <li class="questionsItem">
+                <div class="item-wrap">
+                    <p class="mainText">До якого часу я буду мати доступ до матеріалів марафону?</p>
+                    <div class="icon"></div>
+                </div>
+                <p class="secondText">Доступ до лекцій залишається у вас назавжди. Ви можете повертатися до навчання в зручний для вас час.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="author container">
+        <div class="price">
+            <div class="img"></div>
+            <button class="gradient-button">Придбати курс<br>зі знижкою -75%</button>
+            <p>Ви нічим не ризикуєте. Гарантую <a href="/return.html">повернення коштів</a> у повному обсязі за курс з будь-яких
+                причин протягом 14 днів від дня початку навчання</p>
+        </div>
+    </section>
+    <footer id="contacts">
+        <a href="#header">
+            <img class="button-up" src="icons/btn_up.svg" alt="btnUp">
+        </a>
+        <div class="top-wrap">
+            <a href="/"><img class="footer-logo" src="icons/logo-footer.svg" alt="logo"></a>
+            <ul>
+                <li>
+                    <a href="#about">Про курс</a>
+                </li>
+                <li>
+                    <a href="#author">Про автора</a>
+                </li>
+                <li>
+                    <a href="#certificates">Сертифікати</a>
+                </li>
+                <li>
+                    <a href="#slider">Відгуки</a>
+                </li>
+                <li>
+                    <a href="#FAQ">FAQ</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакти</a>
+                </li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.instagram.com/coach_olya_yavorska/">
+                    <img src="icons/instagram.svg" alt="inst">
+                </a>
+                <a href="https://t.me/yavorskaenglish">
+                    <img src="icons/telegram.svg" alt="tg">
+                </a>
+            </div>
+        </div>
+        <div class="bot-wrap">
+            <p>ФОП яровська о.в.<br>Код за ЄДРПОУ 3387508023<br><a
+                    href="mailto:oljayavorska@gmail.com">oljayavorska@gmail.com</a></p>
+            <ul>
+                <li><a href="/public.html">Договір публічної оферти</a></li>
+                <li><a href="/privacy.html">Політика конфіденційності</a></li>
+                <li><a href="/return.html">Політика повернення платежів</a></li>
+                <li><a href="/safety.html">Політика безпеки передачі реквізитів</a></li>
+            </ul>
+            <img src="icons/visa.svg" alt="visa">
+        </div>
+    </footer>
 </body>
 
 </html>
